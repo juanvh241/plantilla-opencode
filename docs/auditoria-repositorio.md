@@ -35,5 +35,5 @@ En el estado actual no existe logica de juego. El proyecto abre en el editor de 
 ## Hechos, supuestos y preguntas abiertas
 
 - Hechos comprobados: existe el proyecto base de Godot (config 4.7); el binario del editor es Godot 4.7.2.stable.official y esta en `Downloads` (no en el PATH del sistema); el proyecto corre 10 frames en headless sin errores; hay jugador con gravedad/impulso y escena principal.
-- Supuestos por verificar: el renderer GL Compatibility funciona visualmente en la maquina (validacion manual con F5 pendiente); resolucion base 480x720 asumida (pendiente de confirmacion).
-- Preguntas para consultar: ¿confirmas la resolucion de base 480x720? ¿se agrega al PATH el binario de Godot para automatizar pruebas?
+- Supuestos por verificar: el renderer GL Compatibility funciona visualmente en la maquina (validado con F5 por el estudiante el 2026-09-15); resolucion base 480x720 confirmada por el estudiante el 2026-09-15.
+- Preguntas para consultar: ¿se agrega al PATH el binario de Godot para automatizar pruebas?

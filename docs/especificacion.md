@@ -50,7 +50,7 @@ Un juego 2D lateral funcional en Godot 4 con: personaje que cae por gravedad y r
 
 ## Preguntas abiertas
 
-- Resolucion de referencia de la ventana: el GDD usa valores absolutos en px. Se asumira una base 480x720 (retrato), pendiente de confirmacion del estudiante.
+- Resolucion de referencia de la ventana: base 480x720 (retrato), confirmada por el estudiante el 2026-09-15.
 - Rotacion visual del personaje al impulsarse (estetica): el GDD no lo define; se implementara sin rotacion salvo indicacion contraria.
 - Input movil (touch) en exportacion: fuera de alcance; el click y el espacio son suficientes para el prototipo.
 - Metodo de ejecucion de pruebas: manual en el editor (F5) mientras `godot` no este en el PATH.

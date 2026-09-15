@@ -2,7 +2,7 @@
 
 ## Resultado
 
-El proyecto paso de una base vacia de Godot a un prototipo jugable completo de "Angry Flappy Bird": el ave cae por gravedad (~900 px/s2) y recibe un impulso fijo (~-350 px/s) por input (espacio/click/tap); los obstaculos se generan en pares con hueco fijo (~150 px) a intervalos regulares (~300 px) con posicion vertical aleatoria y scroll constante (~150 px/s); el puntaje suma +1 por par superado; cualquier colision (obstaculo, techo o piso) congela la partida y muestra el puntaje; y un nuevo input reinicia todo. Los modelos de estado, puntaje y reinicio se validaron de forma automatica (exit 0); la validacion visual final queda a cargo del estudiante.
+El proyecto paso de una base vacia de Godot a un prototipo jugable completo de "Angry Flappy Bird": el ave cae por gravedad (~900 px/s2) y recibe un impulso fijo (~-350 px/s) por input (espacio/click/tap); los obstaculos se generan en pares con hueco fijo (~150 px) a intervalos regulares (~300 px) con posicion vertical aleatoria y scroll constante (~150 px/s); el puntaje suma +1 por par superado; cualquier colision (obstaculo, techo o piso) congela la partida y muestra el puntaje; y un nuevo input reinicia todo. Los modelos de estado, puntaje y reinicio se validaron de forma automatica (exit 0) y la validacion visual final fue confirmada por el estudiante el 2026-09-15.
 
 ## Cambios y decisiones
 
@@ -25,7 +25,7 @@ El proyecto paso de una base vacia de Godot a un prototipo jugable completo de "
 
 ## Limites y riesgos pendientes
 
-- Validacion visual completa con F5 por parte del estudiante (gravedad, impulso, conteo, colision y caso limite del borde): impacto bajo, proximo paso registrar el resultado en `evidencia-pruebas.md`.
-- Confirmar la resolucion de referencia 480x720 asumida en la especificacion.
+- La validacion visual completa (gravedad, impulso, conteo, colision y caso limite del borde) fue confirmada por el estudiante el 2026-09-15 y registrada en `evidencia-pruebas.md` (sin limites de juego pendientes).
+- La resolucion de referencia 480x720 fue confirmada por el estudiante el 2026-09-15; dejo de considerarse un supuesto.
 - La comision de la materia sigue pendiente de completar en el README.
 - Si se exporta a movil, habria que validar el input tactil ("tap" ya mapeado) en destino real.
