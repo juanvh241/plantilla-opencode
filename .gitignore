@@ -1,0 +1,12 @@
+# Reglas comunes de la plantilla
+.DS_Store
+Thumbs.db
+
+# No versionar credenciales ni configuraciones locales con secretos.
+.env
+.env.*
+!.env.example
+
+# Godot 4+ specific ignores
+.godot/
+/android/
