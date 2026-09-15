@@ -9,8 +9,8 @@ Completa esta matriz antes de habilitar acciones de un agente. Una accion no dec
 | Editar archivos previstos | Permitida | Codigo y documentacion dentro del alcance aprobado |
 | Ejecutar scripts documentados | Permitida | Ejecucion del juego por CLI si Godot esta en PATH; verificaciones de git |
 | Instalar dependencias | Prohibida | No autorizado |
-| Usar red | Prohibida | No autorizado |
-| Publicar o subir cambios | Prohibida | Push a remoto no autorizado; solo commits locales |
+| Usar red | Permitida | Solo para push a `origin` y verificacion del remoto (sin otros usos) |
+| Publicar o subir cambios | Permitida | Push a `origin main` aprobado por el estudiante; force push previa aprobacion explicita |
 | Acceder a secretos o credenciales | Prohibida | No corresponde al trabajo. |
 
 ## Condiciones de detencion

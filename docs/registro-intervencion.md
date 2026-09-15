@@ -7,6 +7,7 @@ Registra cada ciclo relevante de herramienta. No copies razonamientos internos d
 | 2026-09-15 | Leer el repo y preparar el setup | Lectura de README, GDD, docs/, config | Plantilla PIAPC sin proyecto; GDD luego actualizado por el estudiante | Aceptar |
 | 2026-09-15 | Confirmar motor, nombre, identidad y permisos | Preguntas de contexto | Godot 4.7.2, "Angry Flappy Bird", autor juanvh241, permisos: editar + ejecutar + commits locales | Aceptar |
 | 2026-09-15 | Setear opencode y proyecto de Godot | `git init`, config local (user.name/email), edicion de README, .gitignore, docs/auditoria, docs/matriz-permisos | Repositorio git inicializado; docs de proceso completados; base de Godot sin escenas/scripts | Aceptar (previa aprobacion del plan) |
+| 2026-09-15 | Vincular y pushear a GitHub | `git remote add origin`, renombrar rama a `main`, `git push --force-with-lease` | Push de `2c74f90` a `origin main`; commit en GitHub; historia remota reemplazada (el `02e288e` era solo la plantilla original) | Aceptar force push previa aprobacion explicita |
 
 ## Correcciones y acciones rechazadas
 
