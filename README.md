@@ -17,7 +17,7 @@ Esta plantilla prepara un repositorio publico e individual para proyectos academ
 - Materia, comision y anio: Programacion de IA y Patrones de Comportamiento, anio 2026 (comision: [PENDIENTE])
 - Nombre del proyecto: Angry Flappy Bird
 - Motor y version: Godot 4.7.2
-- Estado: En desarrollo - jugador, obstaculos, colision, puntaje y HUD implementados
+- Estado: Prototipo jugable completo - inicio, juego, game over y reinicio funcionando
 
 ## Descripcion
 
@@ -30,7 +30,7 @@ Arcade de habilidad y reflejos, 2D, vista lateral, estilo "Flappy Bird". El juga
 
 ## Controles
 
-- Espacio / click / tap: aplica un impulso vertical hacia arriba al personaje (implementado).
+- Espacio / click / tap: inicia la partida, impulsa al personaje hacia arriba y reinicia tras el game over.
 
 ## Creditos
 

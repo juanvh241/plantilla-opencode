@@ -12,6 +12,7 @@ Registra cada ciclo relevante de herramienta. No copies razonamientos internos d
 | 2026-09-15 | Jugador: gravedad e impulso | `project.godot` (480x720, input flap, main_scene), `scripts/player.gd`, `scenes/player.tscn`, `scenes/main.tscn` | Cli headless exit 0; jugador cae por gravedad e impulsa 350 px/s arriba por input (espacio/click/tap) en validacion manual | Aceptar |
 | 2026-09-15 | Obstaculos: generacion y scroll | `scripts/obstacle.gd`, `scripts/obstacle_spawner.gd`, `scenes/obstacle.tscn`, `scenes/main.tscn` | Cli headless exit 0 (180 frames); pares con hueco fijo 150 px, intervalo 300 px, posicion Y aleatoria y scroll 150 px/s | Aceptar |
 | 2026-09-15 | Colision, puntaje y HUD | `scripts/player.gd` (died, limites, colision), `scripts/obstacle.gd` (passed), `scripts/obstacle_spawner.gd` (stop), `scripts/game.gd` (puntaje/HUD), `scenes/main.tscn` (HUD) | Cli headless exit 0 (600 frames); colision con obstaculo/limite termina la partida y frena el mundo; +1 por par superado via HUD en validacion manual | Aceptar |
+| 2026-09-15 | Flujo de pantallas: inicio, juego, game over y reinicio | `scripts/game.gd` (FSM START/PLAYING/GAME_OVER), `scripts/player.gd` (set_active, respawn), `scripts/obstacle_spawner.gd` (reset), `scenes/main.tscn` (labels de inicio y game over) | Test FSM temporal exit 0 + regresion headless 300 frames exit 0; en editor: inicio espera input, game over muestra puntaje y reinicia todo | Aceptar |
 
 ## Correcciones y acciones rechazadas
 

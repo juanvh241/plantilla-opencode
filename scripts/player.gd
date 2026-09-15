@@ -5,14 +5,16 @@ signal died
 const GRAVITY := 900.0
 const IMPULSE_Y := -350.0
 const FIXED_X := 160.0
+const START_Y := 360.0
 const BOUND_TOP := 15.0
 const BOUND_BOTTOM := 705.0
 
+var _active := true
 var _dead := false
 
 
 func _physics_process(delta: float) -> void:
-	if _dead:
+	if not _active:
 		velocity = Vector2.ZERO
 		return
 	velocity.y += GRAVITY * delta
@@ -29,8 +31,23 @@ func _physics_process(delta: float) -> void:
 		_die()
 
 
+func set_active(active: bool) -> void:
+	_active = active
+	if not active:
+		velocity = Vector2.ZERO
+
+
+func respawn() -> void:
+	global_position = Vector2(FIXED_X, START_Y)
+	velocity = Vector2.ZERO
+	_dead = false
+	_active = true
+
+
 func _die() -> void:
 	if _dead:
 		return
 	_dead = true
+	_active = false
+	velocity = Vector2.ZERO
 	died.emit()

@@ -43,3 +43,10 @@ func stop() -> void:
 	for child in get_children():
 		if child.has_method("stop"):
 			child.stop()
+
+
+func reset() -> void:
+	for child in get_children():
+		child.queue_free()
+	_distance = 0.0
+	_stopped = false

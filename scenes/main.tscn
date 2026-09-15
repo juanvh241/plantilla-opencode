@@ -22,3 +22,30 @@ offset_bottom = 76.0
 theme_override_font_sizes/font_size = 48
 text = "0"
 horizontal_alignment = 1
+mouse_filter = 2
+
+[node name="StartLabel" type="Label" parent="HUD"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 26
+text = "TAP / ESPACIO / CLICK
+PARA VOLAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="GameOverLabel" type="Label" parent="HUD"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
