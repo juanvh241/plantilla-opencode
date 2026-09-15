@@ -25,11 +25,11 @@ En el estado actual no existe logica de juego. El proyecto abre en el editor de 
 
 | Comando o prueba | Que verifica | Resultado inicial |
 |---|---|---|
-| Abrir `project.godot` en Godot 4.7.2 y ejecutar F5 | Que el proyecto base abre y ejecuta sin errores | No ejecutado aun (ejecucion manual en el editor; `godot` no esta en el PATH) |
-| `git status` | Estado de archivos versionados | Repositorio inicializado, archivos sin commit inicial |
+| `Godot_v4.7.2-stable_win64.exe --headless --path <proyecto> --quit-after 10` | Importa escenas, ejecuta 10 frames y reporta errores de parseo/script | Salida de exit code 0, sin errores (validado el 2026-09-15) |
+| Abrir el proyecto en el editor (F5) | Que el juego se ve y responde al input de forma visual | Ejecutado por el estudiante |
 
 ## Hechos, supuestos y preguntas abiertas
 
-- Hechos comprobados: existe el proyecto base de Godot (config 4.7); no hay escenas, scripts, ni assets de juego todavia; no hay repositorio git previo (inicializado en este ciclo); `godot` no esta en el PATH.
-- Supuestos por verificar: la version instalada del editor corresponde a 4.7.2; el renderer GL Compatibility funciona en la maquina.
-- Preguntas para consultar: ¿version exacta del editor instalado? ¿se agrega un atajo de ejecucion por consola? ¿que resolucion de ventana se usara de referencia para las posiciones de juego?
+- Hechos comprobados: existe el proyecto base de Godot (config 4.7); el binario del editor es Godot 4.7.2.stable.official y esta en `Downloads` (no en el PATH del sistema); el proyecto corre 10 frames en headless sin errores; hay jugador con gravedad/impulso y escena principal.
+- Supuestos por verificar: el renderer GL Compatibility funciona visualmente en la maquina (validacion manual con F5 pendiente); resolucion base 480x720 asumida (pendiente de confirmacion).
+- Preguntas para consultar: ¿confirmas la resolucion de base 480x720? ¿se agrega al PATH el binario de Godot para automatizar pruebas?
