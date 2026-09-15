@@ -15,4 +15,5 @@ Registra cada ciclo relevante de herramienta. No copies razonamientos internos d
 
 ## Correcciones y acciones rechazadas
 
+- 2026-09-15: bug en `obstacle_spawner.gd:34` (`obstacle.passed.connect(obstacle_passed)`) — `Signal.connect()` no acepta un Signal como destino, solo una Callable; el primer `_spawn()` crasheaba la partida. Corregido con el metodo puente `_relay_passed()`. Validado con script temporal de prueba (exit 0, 1 obstaculo) y regresion headless de 600 frames (exit 0). La validacion anterior por headless no lo detecto porque el ave moria antes del primer spawn.
 - Ninguna hasta el momento. La version del editor no fue verificada por CLI porque `godot` no esta en el PATH; la ejecucion queda como prueba manual en el editor (F5).

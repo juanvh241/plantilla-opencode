@@ -31,7 +31,11 @@ func _spawn() -> void:
 	var obstacle := OBSTACLE_SCENE.instantiate()
 	add_child(obstacle)
 	obstacle.position = Vector2(START_X, _rng.randf_range(MIN_CENTER, MAX_CENTER))
-	obstacle.passed.connect(obstacle_passed)
+	obstacle.passed.connect(_relay_passed)
+
+
+func _relay_passed() -> void:
+	obstacle_passed.emit()
 
 
 func stop() -> void:
