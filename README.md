@@ -17,7 +17,7 @@ Esta plantilla prepara un repositorio publico e individual para proyectos academ
 - Materia, comision y anio: Programacion de IA y Patrones de Comportamiento, anio 2026 (comision: [PENDIENTE])
 - Nombre del proyecto: Angry Flappy Bird
 - Motor y version: Godot 4.7.2
-- Estado: En desarrollo - jugador, obstaculos con scroll y generacion implementados
+- Estado: En desarrollo - jugador, obstaculos, colision, puntaje y HUD implementados
 
 ## Descripcion
 
