@@ -14,6 +14,10 @@ Registrar hechos verificables sobre la estructura, arquitectura y validacion del
 | `.editorconfig` | Charset utf-8 para el proyecto | Lectura del archivo |
 | `icon.svg` + `icon.svg.import` | Icono del proyecto y metadatos de importacion | Archivos presentes junto a `project.godot` |
 | `GDD.md` | Intencion de diseno completa: movimiento, obstaculos, puntaje, colision y pantallas | Lectura del documento |
+| `scenes/player.tscn` + `scripts/player.gd` | Jugador: gravedad 900 px/s2, impulso -350 px/s, X fija en 160 | Lectura de escena y script |
+| `scenes/obstacle.tscn` + `scripts/obstacle.gd` | Par de bloques superior/inferior (hueco 150 px, bloques 70x1000) con scroll 150 px/s a la izquierda | Lectura de escena y script |
+| `scripts/obstacle_spawner.gd` | Genera pares cada 300 px con posicion vertical aleatoria (100-620) | Lectura de script |
+| `scenes/main.tscn` | Escena principal: Player + ObstacleSpawner | Lectura de escena |
 | `docs/` | Plantillas de proceso PIAPC (9 documentos) | Listado del directorio |
 | `AGENTS.md` | Reglas para agentes: no modificar sin alcance, sin contenido ficticio | Lectura del documento |
 
